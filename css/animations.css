@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    height: 100px;
+    margin: 0;
+    background-color: darkgray;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.quang-row {
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/images/Quang.png');
+    transform: scale(3);
+    transform-origin: top left;
+}
+
+.ngan-row {
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/images/Ngan.png');
+    transform: scale(3);
+    transform-origin: top left;
+}
+
+@keyframes runAction1 {
+    from { background-position: -32px -32px; }
+    to { background-position: -32px -32px; }
+}
+@keyframes runAction2 {
+    from { background-position: 0px -32px; }
+    to { background-position: -128px -32px; }
+}
+
+.action-2 {
+    animation: runAction2 0.5s steps(4) infinite;
+}
+.action-1 {
+    animation: runAction1 0.5s steps(100) infinite;
+}
